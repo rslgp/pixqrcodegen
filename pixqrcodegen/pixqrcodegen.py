@@ -69,7 +69,7 @@ class Payload():
     
     def gerarQrCode(self, payload):
         self.qrcode = qrcode.make(payload)
-        self.qrcode.save('pixqrcode.png')
+        self.qrcode.save(self.txtId+'.png')
         
         return print(payload)
 
